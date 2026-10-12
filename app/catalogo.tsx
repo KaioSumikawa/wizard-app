@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Text, ScrollView, StyleSheet } from 'react-native';
+import { Stack } from 'expo-router';
 import FilmeCard, { Filme } from '../components/FilmeCard';
 
 const filmesMock: Filme[] = [
@@ -54,13 +55,18 @@ const filmesMock: Filme[] = [
 ];
 
 export default function TelaCatalogo() {
-  // Requisito 10: useEffect para registrar o carregamento do catálogo
   useEffect(() => {
     console.log('Catálogo de filmes de Harry Potter carregado com sucesso!');
   }, []);
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <Stack.Screen
+        options={{
+          title: 'Catálogo de Filmes',
+        }}
+      />
+
       <Text style={styles.subtitulo}>Selecione um filme para ver mais detalhes:</Text>
       {filmesMock.map((filme) => (
         <FilmeCard key={filme.id} filme={filme} />
@@ -72,13 +78,13 @@ export default function TelaCatalogo() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#16161D', // Mantém a mesma cor mística do fundo e do header
+    backgroundColor: '#16161D', 
   },
   content: {
     padding: 16,
   },
   subtitulo: {
-    color: '#D4AF37', // Tom dourado suave para o texto de instrução
+    color: '#D4AF37', 
     fontSize: 14,
     marginBottom: 16,
     letterSpacing: 0.5,

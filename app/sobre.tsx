@@ -40,12 +40,12 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
     justifyContent: 'center',
-    backgroundColor: '#16161D', // Fundo místico unificado
+    backgroundColor: '#16161D', 
   },
   titulo: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#FFD700', // Dourado em destaque
+    color: '#FFD700', 
     marginBottom: 24,
     textAlign: 'center',
     letterSpacing: 1,
@@ -54,15 +54,15 @@ const styles = StyleSheet.create({
     textShadowRadius: 6,
   },
   cardInfo: {
-    backgroundColor: '#1C1C24', // Tom interno levemente destacado
+    backgroundColor: '#1C1C24', 
     padding: 20,
     borderRadius: 12,
     marginBottom: 28,
     borderWidth: 1,
-    borderColor: 'rgba(212, 175, 55, 0.3)', // Borda dourada sutil
+    borderColor: 'rgba(212, 175, 55, 0.3)', 
   },
   rotulo: {
-    color: '#D4AF37', // Dourado elegante para rótulos
+    color: '#D4AF37', 
     fontSize: 14,
     fontWeight: 'bold',
     marginTop: 12,
@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   botaoVoltar: {
-    backgroundColor: 'rgba(28, 28, 36, 0.9)', // Fundo escuro sutil e translúcido
+    backgroundColor: 'rgba(28, 28, 36, 0.9)', 
     borderWidth: 1,
-    borderColor: 'rgba(212, 175, 55, 0.5)', // Borda dourada discreta
+    borderColor: 'rgba(212, 175, 55, 0.5)', 
   },
 });

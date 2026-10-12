@@ -12,7 +12,6 @@ export default function TelaInicial() {
       style={styles.background}
       resizeMode="cover"
     >
-      {/* Overlay escuro para dar contraste e destacar as informações */}
       <View style={styles.overlay}>
         <View style={styles.conteudo}>
           <Text style={styles.titulo}>WizardApp</Text>
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(10, 10, 15, 0.75)', // Fundo mais profundo e cinematográfico
+    backgroundColor: 'rgba(10, 10, 15, 0.75)', 
     justifyContent: 'flex-end',
     paddingHorizontal: 28,
     paddingBottom: 48,
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 40,
     fontWeight: 'bold',
-    color: '#FFD700', // Dourado mais vivo e brilhante
+    color: '#FFD700', 
     letterSpacing: 2,
     marginBottom: 4,
     textAlign: 'center',
@@ -84,15 +83,15 @@ const styles = StyleSheet.create({
   },
   botaoPrincipal: {
     width: '100%',
-    backgroundColor: '#8B0000', // Vermelho Grifinória mais profundo
+    backgroundColor: '#8B0000', 
     marginBottom: 14,
     borderWidth: 1.5,
-    borderColor: '#FFD700', // Borda dourada marcante
+    borderColor: '#FFD700', 
   },
   botaoSecundario: {
     width: '100%',
-    backgroundColor: 'rgba(20, 20, 30, 0.9)', // Efeito vidro fumê escuro
+    backgroundColor: 'rgba(20, 20, 30, 0.9)', 
     borderWidth: 1,
-    borderColor: 'rgba(255, 215, 0, 0.5)', // Dourado sutil nas bordas
+    borderColor: 'rgba(255, 215, 0, 0.5)', 
   },
 });

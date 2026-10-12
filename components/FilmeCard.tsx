@@ -5,7 +5,7 @@ import { useRouter } from 'expo-router';
 export interface Filme {
   id: string;
   titulo: string;
-  imagem: any; // Ajustado para aceitar imagens locais com require()
+  imagem: any; 
   genero: string;
   ano: number;
   descricao: string;
@@ -46,7 +46,6 @@ export default function FilmeCard({ filme }: FilmeCardProps) {
         </View>
       </Pressable>
 
-      {/* Botão de Favorito estilizado com as cores do tema */}
       <Pressable
         onPress={toggleFavorito}
         style={({ pressed }) => [
@@ -65,16 +64,16 @@ export default function FilmeCard({ filme }: FilmeCardProps) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#16161D', // Fundo mais escuro e aristocrático
+    backgroundColor: '#16161D', 
     borderRadius: 12,
     padding: 14,
     marginBottom: 16,
     borderWidth: 1,
-    borderColor: 'rgba(212, 175, 55, 0.25)', // Borda dourada sutil
+    borderColor: 'rgba(212, 175, 55, 0.25)', 
   },
   cardFavorito: {
-    borderColor: '#FFD700', // Destaca a borda em dourado quando favoritado
-    backgroundColor: '#1B1515', // Leve tom amadeirado/burgundy ao favoritar
+    borderColor: '#FFD700', 
+    backgroundColor: '#1B1515', 
   },
   containerInfo: {
     flexDirection: 'row',
@@ -93,7 +92,7 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   titulo: {
-    color: '#FFD700', // Título em dourado para dar destaque mágico
+    color: '#FFD700', 
     fontSize: 17,
     fontWeight: 'bold',
     marginBottom: 6,
@@ -106,14 +105,14 @@ const styles = StyleSheet.create({
   botaoFavorito: {
     marginTop: 12,
     paddingVertical: 10,
-    backgroundColor: '#242433', // Fundo neutro místico
+    backgroundColor: '#242433', 
     borderRadius: 8,
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'rgba(212, 175, 55, 0.3)',
   },
   botaoFavoritoAtivo: {
-    backgroundColor: '#740001', // Vermelho Grifinória profundo quando ativo
+    backgroundColor: '#740001', 
     borderColor: '#FFD700',
   },
   botaoPressionado: {
